@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!-- bootstrap js -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <title>Quiz</title>
+</head>
+<body>
+
+    <div class="input-field col s6">
+            <input id="name" type="text" class="validate" value="">
+            <label for="name">Fill your Name</label>
+    </div>
+    <!-- Example single danger button -->
+    <div class="btn-group">
+        <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Category
+        </button>
+        <div class="dropdown-menu">
+        <a class="dropdown-item" href="#" id="startEnglish">Englsih</a>
+        <a class="dropdown-item" href="#" id="startMedicine">Medicine</a>
+        </div>
+    </div>
+
+    <div class="container"  style="display: none;">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 foo" style="height:500px;" >
+                        <div class="mini-timer"></div>
+                        <div id="question"></div>
+                        <div id="choices">
+                            <div class="choice" id="A"></div>
+                            <div class="choice" id="B"></div>
+                            <div class="choice" id="C"></div>
+                            <div class="choice" id="D"></div>
+                        </div>
+                        <div id="progress"></div>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 tohide" style="height:500px;">
+                        <div id="img"><img src="" alt="">
+                        </div>
+                        <div id="timer">
+                            <div id="counter"></div>
+                            <div id="btimeGauge"></div>
+                            <div id="timeGauge"></div>
+                        </div>
+
+                </div>
+            </div>
+    </div>
+    <div id="scoreContainer" style="display: none"></div>
+    <script src="script.js"></script>
+</body>
+</html>
