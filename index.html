@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/e9f047ce30.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!-- Compiled and minified CSS -->
@@ -24,17 +25,21 @@
             <input id="name" type="text" class="validate" value="">
             <label for="name">Fill your Name</label>
     </div>
-    <!-- Example single danger button -->
-    <div class="btn-group">
-        <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-        Category
-        </button>
-        <div class="dropdown-menu">
-        <a class="dropdown-item" href="#" id="startEnglish">Englsih</a>
-        <a class="dropdown-item" href="#" id="startMedicine">Medicine</a>
-        </div>
+
+    <div id="btn-gp">
+        <div id="startEnglish" class="cat_btn english"><i class="fas fa-language"></i><p class="icon-text">English</p></div>
+        <div id="startMedicine" class="cat_btn medicine"><i class="fas fa-plus-square"></i><p class="icon-text">Medicine</p></div>
+        <div id="startTechnology" class="cat_btn technology"><i class="fas fa-vial"></i><p class="icon-text tech">Technology</p></div>
+        <div id="startMovies" class="cat_btn movies"><i class="fas fa-film"></i><p class="icon-text film">Movies</p></div>
+        <div id="startMaths" class="cat_btn english"><p class="icon-text">Maths</p></div>
+        <div id="startPhysics" class="cat_btn physics"><p class="icon-text">Physics</p></div>
+        <div id="startChemistry" class="cat_btn chemistry"><p class="icon-text">Chemistry</p></div>
+        <div id="startGeology" class="cat_btn geology"><p class="icon-text">Geology</p></div>
     </div>
 
+
+    </div>
+    
     <div class="container"  style="display: none;">
             <div class="row">
                 <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 foo" style="height:500px;" >

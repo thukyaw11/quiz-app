@@ -20,6 +20,7 @@ body{
 
 .container{
     width: 100%;
+
 }
 .row{
     margin-top: 80px;
@@ -37,6 +38,75 @@ body{
 #question p{
     font-size: 30px;
     font-weight: bold;
+}
+#hello{
+    text-align: center;
+}
+
+
+#btn-gp{
+    width: 90%;
+    height: 1300px;
+    margin: 0 auto;
+
+}
+::-webkit-scrollbar {
+    display: none;
+}
+.cat_btn{
+    
+    width: 49%;
+    float: left;
+    height: 23%;
+    background: red;
+    margin: 2px;
+    border-radius: 4px;
+    padding: 20px 0px 0px 30px;
+    position: relative;
+    
+}
+.fas{
+    font-size: 100px;
+    position: absolute;
+    top: 80px;
+    left: 210px;
+    color: white;
+}
+.fas.fa-plus-square{
+    left: 250px;
+    top: 95px;
+    font-size: 70px;
+    position: absolute;
+}
+.fas.fa-vial{
+    position: absolute;
+    font-size: 80px;
+    left: 250px;
+}
+.fas.fa-film{
+    position: absolute;
+    font-size: 80px;
+    left: 240px;
+}
+.icon-text{
+    position: absolute;
+    top: 180px;
+    left: 250px;
+    color: white;
+
+}
+.icon-text.film{
+    position: absolute;
+    left: 280px;
+}
+.english{
+    background: green;
+}
+.medicine{
+    background: blue;
+}
+.technology{
+    background: violet;
 }
 #choices{
     width: 100%;
@@ -184,5 +254,45 @@ body{
     }
     #question p{
         font-size: 25px;
+    }
+    .cat_btn{
+        width: 48%;
+        height: 24%;
+    }
+    #btn-gp{
+        height: 800px;
+    }
+    .fas{
+        left: 40px;
+        font-size: 50px;
+        top: 50px;
+    }
+    .icon-text{
+        left: 50px;
+        top: 100px;
+    }
+    .fas.fa-plus-square{
+        top: 58px;
+        left: 59px;
+        font-size: 35px;
+        position: absolute;
+    }
+    .fas.fa-vial{
+        position: absolute;
+        font-size: 45px;
+        left: 54px;
+    }
+    .icon-text.tech{
+        left: 40px;
+        position: absolute;
+    }
+    .fas.fa-film{
+        position: absolute;
+        left: 55px;
+        font-size: 45px;
+    }
+    .icon-text.film{
+        position: absolute;
+        left: 60px;
     }
   }
