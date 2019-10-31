@@ -159,7 +159,7 @@ body{
         border-radius: 4px;
     }
     .choice:hover{
-        border: 1px solid mediumseagreen;
+        border: 3px solid mediumseagreen;
     }
     .tohide{
         display: none;
