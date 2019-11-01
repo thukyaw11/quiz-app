@@ -27,84 +27,84 @@ const body = document.getElementsByTagName("body")[0];
 //array for category
 let english = [
     {
-        question:"What is the windiest month?",
+        question:"He ______ all of them.",
         img:"img/socialMedia.jpeg",
-        choiceA:"March",
-        choiceB:"November",
-        choiceC:"December",
-        choiceD:"June",
+        choiceA:"went",
+        choiceB:"listened",
+        choiceC:"spoke",
+        choiceD:"wanted",
+        correct:"D"
+    },
+    {
+        question:"______ are you mad? Because you are late!",
+        img:"img/sorry.jpeg",
+        choiceA:"Why",
+        choiceB:"Who",
+        choiceC:"What",
+        choiceD:"Who",
+        correct:"A"
+    },
+    {
+        question:"The milk is ______ the refrigerator..",
+        img:"img/tired.jpeg",
+        choiceA:"to",
+        choiceB:"at",
+        choiceC:"on",
+        choiceD:"in",
+        correct:"D"
+    },
+    {
+        question:"The wind ______ hard all night.",
+        img:"img/speak.jpeg",
+        choiceA:"blow",
+        choiceB:"blew",
+        choiceC:"blown",
+        choiceD:"blowing",
         correct:"B"
     },
     {
-        question:"I'm sorry, you will just have to ______.",
-        img:"img/sorry.jpeg",
-        choiceA:"wait",
-        choiceB:"avoid",
-        choiceC:"like",
-        choiceD:"find",
-        correct:"A"
-    },
-    {
-        question:"They're tired ______ they worked for ten hours.",
-        img:"img/tired.jpeg",
-        choiceA:"or",
-        choiceB:"however",
-        choiceC:"when",
-        choiceD:"because",
-        correct:"D"
-    },
-    {
-        question:"I will speak ______ Suzanne when I see her.",
-        img:"img/speak.jpeg",
-        choiceA:"around",
-        choiceB:"at",
-        choiceC:"in",
-        choiceD:"to",
-        correct:"D"
-    },
-    {
-        question:"Where ______ the Battle of the Bulge?",
+        question:"You can't have your cake ______ eat it too.",
         img:"img/battel.jpeg",
-        choiceA:"was",
-        choiceB:"were",
-        choiceC:"is",
-        choiceD:"weren't",
-        correct:"A"
+        choiceA:"although",
+        choiceB:"and",
+        choiceC:"while",
+        choiceD:"or",
+        correct:"B"
     },
     {
-        question:"Chocolate is my greatest ______.",
+        question:"I've ______ a terrible headache.",
         img:"img/cho.jpeg",
-        choiceA:"weak",
-        choiceB:"weaken",
-        choiceC:"weakness",
-        choiceD:"weakly",
+        choiceA:"have",
+        choiceB:"gotten",
+        choiceC:"got",
+        choiceD:"has",
         correct:"C"
     },
     {
-        question:"______ the war, most Italians were farmers.",
+        question:"I'm sorry we are so late; our car ______ down on the highway.",
         img:"img/farmer.jpeg",
-        choiceA:"Top",
-        choiceB:"Before",
-        choiceC:"From",
-        choiceD:"In",
+        choiceA:"broken",
+        choiceB:"broke",
+        choiceC:"break",
+        choiceD:"breaks",
         correct:"B"
     },
     {
-        question:"How old is our teacher(Sir Htet Wai Yan)?",
+        question:"I'm surprised because rain was not ______ in the weather report.",
         img:"img/htet.png",
-        choiceA:"24",
-        choiceB:"23",
-        choiceC:"18",
-        choiceD:"30",
+        choiceA:"predicted",
+        choiceB:"predictable",
+        choiceC:"prediction",
+        choiceD:"predict",
         correct:"A"
     },
     {
-        question:"Do you have any money?",
+        question:"You two are always fighting. Why can't you ______?",
         img:"img/money.jpeg",
-        choiceA:"No, I don't have many",
-        choiceB:"No, I does not",
-        choiceC:"Yes, I have any",
-        choiceD:"No, I have none",
+        choiceA:"get down",
+        choiceB:"get off",
+        choiceC:"get through",
+        choiceD:"get along",
         correct:"D"
     }
 
@@ -122,76 +122,76 @@ let medicine = [
         correct:"C"
     },
     {
-        question:"What is blood cell shape like?",
+        question:"Which type of cell is found in the brain?",
         img:"img/money.jpeg",
-        choiceA:"Eggs",
-        choiceB:"Rectangle",
-        choiceC:"Doughnuts",
-        choiceD:"Tubes",
+        choiceA:"White blood cell",
+        choiceB:"Neurons",
+        choiceC:"Epithelial cell",
+        choiceD:"Nerves",
+        correct:"B"
+    },
+    {
+        question:"What is the largest organ in the human body?",
+        img:"img/money.jpeg",
+        choiceA:"Heart",
+        choiceB:"Liver",
+        choiceC:"Kidney",
+        choiceD:"Skin",
+        correct:"D"
+    },
+    {
+        question:"What is the largest bone in the body?",
+        img:"img/money.jpeg",
+        choiceA:"Scapula",
+        choiceB:"Femur",
+        choiceC:"Tarsal",
+        choiceD:"None of the above",
+        correct:"B"
+    },
+    {
+        question:"How much blood does the human body contain?",
+        img:"img/money.jpeg",
+        choiceA:"5-6 liters",
+        choiceB:"5-6 quarts",
+        choiceC:"5-6 gallons",
+        choiceD:"5-6 cups",
+        correct:"B"
+    },
+    {
+        question:"What is the average human body temperature?",
+        img:"img/money.jpeg",
+        choiceA:"96.8 deg F",
+        choiceB:"98.6 deg F",
+        choiceC:"86.9 deg F",
+        choiceD:"68.8 deg F",
+        correct:"B"
+    },
+    {
+        question:"How many bones do babies have when they are born?",
+        img:"img/money.jpeg",
+        choiceA:"100-150",
+        choiceB:"150-270",
+        choiceC:"270-350",
+        choiceD:"350-400",
         correct:"C"
     },
     {
-        question:"What are blood cell shape like?",
+        question:"How many bones are in the human skull?",
         img:"img/money.jpeg",
-        choiceA:"Eggs",
-        choiceB:"Rectangle",
-        choiceC:"Doughnuts",
-        choiceD:"Tubes",
-        correct:"C"
+        choiceA:"18",
+        choiceB:"22",
+        choiceC:"34",
+        choiceD:"48",
+        correct:"B"
     },
     {
-        question:"What are blood cell shape like?",
+        question:"How many taste buds does the average human tongue have?",
         img:"img/money.jpeg",
-        choiceA:"Eggs",
-        choiceB:"Rectangle",
-        choiceC:"Doughnuts",
-        choiceD:"Tubes",
-        correct:"C"
-    },
-    {
-        question:"What are blood cell shape like?",
-        img:"img/money.jpeg",
-        choiceA:"Eggs",
-        choiceB:"Rectangle",
-        choiceC:"Doughnuts",
-        choiceD:"Tubes",
-        correct:"C"
-    },
-    {
-        question:"What are blood cell shape like?",
-        img:"img/money.jpeg",
-        choiceA:"Eggs",
-        choiceB:"Rectangle",
-        choiceC:"Doughnuts",
-        choiceD:"Tubes",
-        correct:"C"
-    },
-    {
-        question:"What are blood cell shape like?",
-        img:"img/money.jpeg",
-        choiceA:"Eggs",
-        choiceB:"Rectangle",
-        choiceC:"Doughnuts",
-        choiceD:"Tubes",
-        correct:"C"
-    },
-    {
-        question:"What are blood cell shape like?",
-        img:"img/money.jpeg",
-        choiceA:"Eggs",
-        choiceB:"Rectangle",
-        choiceC:"Doughnuts",
-        choiceD:"Tubes",
-        correct:"C"
-    },
-    {
-        question:"What are blood cell shape like?",
-        img:"img/money.jpeg",
-        choiceA:"Eggs",
-        choiceB:"Rectangle",
-        choiceC:"Doughnuts",
-        choiceD:"Tubes",
-        correct:"C"
+        choiceA:"1,000",
+        choiceB:"100,000",
+        choiceC:"1,000,000",
+        choiceD:"10,000",
+        correct:"D"
     }
  
 ]
