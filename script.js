@@ -20,6 +20,8 @@ const buttonD = document.getElementById("D");
 const miniTimer = document.getElementsByClassName("mini-timer")[0];
 const introBtn = document.getElementById("intro-start");
 const intro = document.getElementsByClassName("intro")[0];
+const body = document.getElementsByTagName("body")[0];
+
 
 //create an array to store ques,ans and img
 //array for category
@@ -203,6 +205,7 @@ const gaugeWidth = 150;
 const gaugeUnit = gaugeWidth/questionTime;
 let TIMER;
 let score = 0;
+body.style.backgroundColor = "midnightblue";
 
 //render question
 const renderQuestion = (category) => {
@@ -220,6 +223,7 @@ introBtn.addEventListener("click",function(){
     input.style.display = "block";
     buttons.style.display = "block";
     intro.style.display = "none";
+    body.style.backgroundColor =  "#e2e1e0";
 })
 startEnglish.addEventListener("click",function(){
     startQuiz(english);
