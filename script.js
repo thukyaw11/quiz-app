@@ -223,7 +223,7 @@ introBtn.addEventListener("click",function(){
     input.style.display = "block";
     buttons.style.display = "block";
     intro.style.display = "none";
-    body.style.backgroundColor =  "#e2e1e0";
+    body.style.backgroundColor =  "white";
 })
 startEnglish.addEventListener("click",function(){
     startQuiz(english);
