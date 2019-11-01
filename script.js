@@ -18,6 +18,8 @@ const buttonB = document.getElementById("B");
 const buttonC = document.getElementById("C");
 const buttonD = document.getElementById("D");
 const miniTimer = document.getElementsByClassName("mini-timer")[0];
+const introBtn = document.getElementById("intro-start");
+const intro = document.getElementsByClassName("intro")[0];
 
 //create an array to store ques,ans and img
 //array for category
@@ -214,7 +216,11 @@ const renderQuestion = (category) => {
     choiceC.innerHTML = q.choiceC;
     choiceD.innerHTML = q.choiceD;
 }
-
+introBtn.addEventListener("click",function(){
+    input.style.display = "block";
+    buttons.style.display = "block";
+    intro.style.display = "none";
+})
 startEnglish.addEventListener("click",function(){
     startQuiz(english);
 
