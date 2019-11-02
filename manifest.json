@@ -8,9 +8,10 @@
         "sizes": "192x192"
       }
     ],  
-    "start_url": "\/https:\/\/thukyaw11.github.io\/quiz-app\/",
+    "start_url": "https://thukyaw11.github.io/quiz-app/",
     "background_color": "midnightblue",
     "display": "standalone",
+    "scope": "/",
     "theme_color": "midnightblue",
     "orientation": "portrait-primary"
   }
