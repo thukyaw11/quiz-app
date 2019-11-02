@@ -8,7 +8,7 @@
         "sizes": "192x192"
       }
     ],  
-    "start_url": "/http://127.0.0.1:5501/index.html",
+    "start_url": "/https://thukyaw11.github.io/quiz-app/",
     "background_color": "midnightblue",
     "display": "standalone",
     "scope": "/maps/",
