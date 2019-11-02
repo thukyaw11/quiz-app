@@ -11,6 +11,7 @@ const startTechnology = document.getElementById("startTechnology");
 //
 const img = document.getElementById("img");
 const nav = document.getElementsByClassName("nav-bar")[0];
+const page = document.getElementById("current-page");
 const progress = document.getElementById("progress");
 const counter = document.getElementById("counter");
 const timeGauge = document.getElementById("timeGauge");
@@ -330,7 +331,7 @@ startTechnology.addEventListener("click",function(){
 })
 
 function startQuiz(category){
-
+    page.innerHTML = "Quiz";
     buttons.style.display = "none";
     input.style.display = "none";
     renderQuestion(category);
@@ -418,6 +419,7 @@ const checkAnswer = (answer,category) => {
 
 
 const scoreRender = () => {
+    page.innerHTML = "Score";
     const name = document.getElementById("name").value;
     quiz.style.display = "none";
     scoreDiv.style.display = "block";
