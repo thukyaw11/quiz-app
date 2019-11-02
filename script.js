@@ -10,6 +10,7 @@ const startMedicine = document.getElementById("startMedicine");
 const startTechnology = document.getElementById("startTechnology");
 //
 const img = document.getElementById("img");
+const nav = document.getElementsByClassName("nav-bar")[0];
 const progress = document.getElementById("progress");
 const counter = document.getElementById("counter");
 const timeGauge = document.getElementById("timeGauge");
@@ -312,7 +313,8 @@ introBtn.addEventListener("click",function(){
     input.style.display = "block";
     buttons.style.display = "block";
     intro.style.display = "none";
-    body.style.backgroundColor =  "white";
+    body.style.backgroundColor =  "#fffcfc";
+    nav.style.display = "block";
 })
 startEnglish.addEventListener("click",function(){
     startQuiz(english);

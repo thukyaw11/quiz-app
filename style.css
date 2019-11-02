@@ -60,6 +60,31 @@ h3{
     margin-top: 10px;
     text-align: center;
 }
+.nav-bar{
+    width: 100%;
+    height: 70px;
+    background: midnightblue;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.19), 0 2px 2px rgba(0,0,0,0.23);
+}
+#current-page{
+    font-size: 20px;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    padding: 20px 0px 0px 30px;
+    float: left;
+}
+#about{
+    width: 50px;
+    height: 100%;
+    float:right;
+    margin-right:70px;
+}
+.far.fa-question-circle{
+    font-size: 30px;
+    color: whitesmoke;
+    padding-top: 18px;
+}
 .container{
     width: 100%;
 
@@ -69,6 +94,7 @@ h3{
     background: #fff;
     border-radius: 2px;
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+
 }
 #question{
     width: 100%;
@@ -489,5 +515,29 @@ h3{
         font-size: 2em;
         text-align: center;
     
+    }
+    .nav-bar{
+        height: 50px;
+        background: white;
+        box-shadow: 0 1px 1px rgba(0,0,0,0.19), 0 2px 2px rgba(0,0,0,0.23);
+    }
+    #current-page{
+        font-size: 20px;
+        font-weight: 700;
+        font-family: 'Montserrat', sans-serif;
+        padding: 10px 0px 0px 10px;
+        color: black;
+        float: left;
+    }
+    #about{
+        width: 20px;
+        height: 100%;
+        float:right;
+        margin-right:20px;
+    }
+    .far.fa-question-circle{
+        font-size: 20px;
+        color:black;
+        padding-top: 12px;
     }
   }

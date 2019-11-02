@@ -9,7 +9,7 @@
       }
     ],  
     "start_url": "https://thukyaw11.github.io/quiz-app/",
-    "background_color": "midnightblue",
+    "background_color": "white",
     "display": "standalone",
     "scope": "/",
     "theme_color": "midnightblue",
