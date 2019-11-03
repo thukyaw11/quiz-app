@@ -28,8 +28,9 @@ const intro = document.getElementsByClassName("intro")[0];
 const body = document.getElementsByTagName("body")[0];
 const bars = document.getElementById("bars");
 const sidePanel = document.getElementById("mysidePanel");
-
-
+const list = document.getElementsByTagName("li")[0];
+const label = document.getElementsByClassName("custom-control-label")[0];
+const cross = document.getElementById("cross");
 //create an array to store ques,ans and img
 //array for category
 let english = [
@@ -434,3 +435,26 @@ const scoreRender = () => {
     const scorePercent = Math.round(100*score/window.hehe.length);
     scoreDiv.innerHTML = "<p> Hello, " + "<b>"+    name.toUpperCase()+"</b> <br>"+"Result : "+"<b>"+score + "/" + window.hehe.length+"</b> <br>Your score percent is <b>"+scorePercent+" %</b> </p>";
 }
+
+
+
+//dark mode
+const checkBox = document.getElementsByClassName("custom-control-input")[0];
+checkBox.addEventListener("click",function(){
+    if(checkBox.checked){
+        body.style.backgroundColor = "#171C27";
+        sidePanel.style.backgroundColor = "#171C27";
+        list.style.color = "white";
+        label.style.color = "white";
+        cross.style.color = "white";
+
+
+    }else if(!checkBox.checked){
+        body.style.backgroundColor = "#fffcfc";
+        sidePanel.style.backgroundColor = "white";
+        list.style.color = "black";
+        label.style.color = "black";
+        cross.style.color = "black";
+    }
+
+});
