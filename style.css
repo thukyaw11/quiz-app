@@ -63,14 +63,14 @@ h3{
 .nav-bar{
     width: 100%;
     height: 70px;
-    background: midnightblue;
+    background: white;
     box-shadow: 0 1px 1px rgba(0,0,0,0.19), 0 2px 2px rgba(0,0,0,0.23);
 }
 #current-page{
     font-size: 20px;
     font-weight: 700;
     font-family: 'Montserrat', sans-serif;
-    color: white;
+    color: black;
     padding: 20px 0px 0px 30px;
     float: left;
 }
@@ -82,7 +82,7 @@ h3{
 }
 .fas.fa-bars{
     font-size: 30px;
-    color: whitesmoke;
+    color: black;
     padding-top: 18px;
     cursor: pointer;
 }
@@ -317,6 +317,10 @@ h3{
     font-size: 3em;
     text-align: center;
 
+}
+.fas.fa-home{
+    font-size: 100px;
+    color: black;
 }
 .mini-timer{
     display: none;

@@ -22,6 +22,8 @@ const buttonA = document.getElementById("A");
 const buttonB = document.getElementById("B");
 const buttonC = document.getElementById("C");
 const buttonD = document.getElementById("D");
+
+
 const miniTimer = document.getElementsByClassName("mini-timer")[0];
 const introBtn = document.getElementById("intro-start");
 const intro = document.getElementsByClassName("intro")[0];
@@ -31,6 +33,7 @@ const sidePanel = document.getElementById("mysidePanel");
 const list = document.getElementsByTagName("li")[0];
 const label = document.getElementsByClassName("custom-control-label")[0];
 const cross = document.getElementById("cross");
+const row = document.getElementsByClassName("row")[0];
 //create an array to store ques,ans and img
 //array for category
 let english = [
@@ -433,7 +436,8 @@ const scoreRender = () => {
     quiz.style.display = "none";
     scoreDiv.style.display = "block";
     const scorePercent = Math.round(100*score/window.hehe.length);
-    scoreDiv.innerHTML = "<p> Hello, " + "<b>"+    name.toUpperCase()+"</b> <br>"+"Result : "+"<b>"+score + "/" + window.hehe.length+"</b> <br>Your score percent is <b>"+scorePercent+" %</b> </p>";
+    scoreDiv.innerHTML = "<p> Hello, " + "<b>"+    name.toUpperCase()+"</b> <br>"+"Result : "+"<b>"+score + "/" + window.hehe.length+"</b> <br>Your score percent is <b>"+scorePercent+" %</b> </p><i class='fas fa-home'></i>";
+
 }
 
 
@@ -447,7 +451,24 @@ checkBox.addEventListener("click",function(){
         list.style.color = "white";
         label.style.color = "white";
         cross.style.color = "white";
-
+        nav.style.backgroundColor = "black";
+        page.style.color = "white";
+        bars.style.color = "white";
+        row.style.backgroundColor = "#171C27";
+        buttonA.style.backgroundColor = "#171C27";
+        buttonB.style.backgroundColor = "#171C27";
+        buttonC.style.backgroundColor = "#171C27";
+        buttonD.style.backgroundColor = "#171C27";
+        buttonA.style.border = "1px solid green";
+        buttonB.style.border = "1px solid green";
+        buttonC.style.border = "1px solid green";
+        buttonD.style.border = "1px solid green";
+        buttonA.style.color = "white";
+        buttonB.style.color = "white";
+        buttonC.style.color = "white";
+        buttonD.style.color = "white";
+        question.style.color = "white";
+        scoreDiv.style.color = "white";
 
     }else if(!checkBox.checked){
         body.style.backgroundColor = "#fffcfc";
@@ -455,6 +476,20 @@ checkBox.addEventListener("click",function(){
         list.style.color = "black";
         label.style.color = "black";
         cross.style.color = "black";
+        nav.style.backgroundColor = "white";
+        page.style.color = "black";
+        bars.style.color = "black";
+        row.style.backgroundColor = "white";
+        buttonA.style.backgroundColor = "white";
+        buttonB.style.backgroundColor = "white";
+        buttonC.style.backgroundColor = "white";
+        buttonD.style.backgroundColor = "white";
+        buttonA.style.color = "black";
+        buttonB.style.color = "black";
+        buttonC.style.color = "black";
+        buttonD.style.color = "black";
+        question.style.color = "black";
+        scoreDiv.style.color = "black";
     }
 
 });
