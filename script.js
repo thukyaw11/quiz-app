@@ -309,7 +309,6 @@ body.style.backgroundColor = "midnightblue";
 ques.addEventListener("click",function(){
     about_title.style.display = "block";
     buttons.style.display = "none";
-    nav.style.display = "none";
     input.style.display = "none";
 
 });
