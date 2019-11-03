@@ -26,6 +26,8 @@ const miniTimer = document.getElementsByClassName("mini-timer")[0];
 const introBtn = document.getElementById("intro-start");
 const intro = document.getElementsByClassName("intro")[0];
 const body = document.getElementsByTagName("body")[0];
+const bars = document.getElementById("bars");
+const sidePanel = document.getElementById("mysidePanel");
 
 
 //create an array to store ques,ans and img
@@ -317,6 +319,12 @@ introBtn.addEventListener("click",function(){
     body.style.backgroundColor =  "#fffcfc";
     nav.style.display = "block";
 })
+bars.addEventListener("click",function(){
+    sidePanel.style.width = "160px";
+});
+const closePanel = () => {
+    sidePanel.style.width = "0";
+}
 startEnglish.addEventListener("click",function(){
     startQuiz(english);
 

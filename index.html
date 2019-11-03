@@ -22,6 +22,21 @@
     <title>Quiz</title>
 </head>
 <body>
+    <div id="mysidePanel" class="sidePanel">
+            <i class="fas fa-times" onclick="closePanel()"></i>
+        <ul>
+            <li><i class="far fa-question-circle"></i>About us</li>
+            <li>
+                    <div class="custom-control custom-switch">
+                            
+                            <input type="checkbox" class="custom-control-input" id="customSwitch1" checked>
+                            <label class="custom-control-label" for="customSwitch1">Dark Mode</label>
+                            
+                    </div>
+            </li>
+        </ul>
+    </div>
+
     <div class="intro">
         <h3 class="header">INTRODUCTION</h3>
         <div class="intro-text">
@@ -40,7 +55,7 @@
     </div>
     <div class="nav-bar" style="display: none;">
         <div id="current-page">Home</div>
-        <div id="about"><i class="far fa-question-circle"></i></div>
+        <div id="about"><i class="fas fa-bars" id="bars"></i></i></div>
     </div>
     <div class="input-field col s6" style="display: none;">
             <input id="name" type="text" class="validate" value="">

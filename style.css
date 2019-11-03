@@ -80,10 +80,11 @@ h3{
     float:right;
     margin-right:70px;
 }
-.far.fa-question-circle{
+.fas.fa-bars{
     font-size: 30px;
     color: whitesmoke;
     padding-top: 18px;
+    cursor: pointer;
 }
 .container{
     width: 100%;
@@ -320,6 +321,42 @@ h3{
 .mini-timer{
     display: none;
 }
+/* toggle animation */
+.sidePanel{
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    height: 100%;
+    top: 0;
+    right: 0;
+    background:white;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 30px;
+}
+ul{
+    list-style-type: none;
+}
+li{
+    width: 100%;
+    height: 30px;
+    color: black;
+    text-align: center;
+    cursor: pointer;
+}
+.far.fa-question-circle{
+    font-size: 15px;
+    padding-right: 10px;
+}
+.custom-control-label{
+    color: black;
+    cursor: pointer;
+}
+.fas.fa-times{
+    font-size: 20px;
+    margin-left: 130px;
+    cursor: pointer;
+}
 
 @media only screen and (max-width: 600px) {
     #scoreContainer p{
@@ -535,9 +572,16 @@ h3{
         float:right;
         margin-right:20px;
     }
-    .far.fa-question-circle{
+    .fas.fa-bars{
         font-size: 20px;
         color:black;
         padding-top: 12px;
     }
+        /* toggle animation */
+    .sidePanel{
+        width: 0px;
+
+    }
+    
+
   }
