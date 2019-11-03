@@ -319,9 +319,12 @@ h3{
 
 }
 .fas.fa-home{
-    font-size: 100px;
+    font-size: 30px;
     color: black;
+    margin: 200px 0px 0px 280px;
+    cursor: pointer;
 }
+
 .mini-timer{
     display: none;
 }
@@ -585,6 +588,11 @@ li{
     .sidePanel{
         width: 0px;
 
+    }
+    .fas.fa-home{
+        font-size: 30px;
+        color: black;
+        margin: 250px 0px 0px 124px;
     }
     
 

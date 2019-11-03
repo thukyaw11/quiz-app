@@ -34,6 +34,8 @@ const list = document.getElementsByTagName("li")[0];
 const label = document.getElementsByClassName("custom-control-label")[0];
 const cross = document.getElementById("cross");
 const row = document.getElementsByClassName("row")[0];
+const about = document.getElementById("ques");
+const about_title = document.getElementById("about_title");
 //create an array to store ques,ans and img
 //array for category
 let english = [
@@ -303,7 +305,14 @@ const gaugeUnit = gaugeWidth/questionTime;
 let TIMER;
 let score = 0;
 body.style.backgroundColor = "midnightblue";
+//about us
+ques.addEventListener("click",function(){
+    about_title.style.display = "block";
+    buttons.style.display = "none";
+    nav.style.display = "none";
+    input.style.display = "none";
 
+});
 //render question
 const renderQuestion = (category) => {
     console.log(category);
@@ -436,7 +445,11 @@ const scoreRender = () => {
     quiz.style.display = "none";
     scoreDiv.style.display = "block";
     const scorePercent = Math.round(100*score/window.hehe.length);
-    scoreDiv.innerHTML = "<p> Hello, " + "<b>"+    name.toUpperCase()+"</b> <br>"+"Result : "+"<b>"+score + "/" + window.hehe.length+"</b> <br>Your score percent is <b>"+scorePercent+" %</b> </p><i class='fas fa-home'></i>";
+    scoreDiv.innerHTML = "<p> Hello, " + "<b>"+    name.toUpperCase()+"</b> <br>"+"Result : "+"<b>"+score + "/" + window.hehe.length+"</b> <br>Your score percent is <b>"+scorePercent+" %</b> </p><i class='fas fa-home' id='home'></i>";
+    const home = document.getElementById("home");
+    home.addEventListener("click",function(){
+        window.location.reload();
+    });
 
 }
 
