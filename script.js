@@ -37,6 +37,15 @@ const row = document.getElementsByClassName("row")[0];
 const about = document.getElementById("ques");
 const about_title = document.getElementById("about_title");
 
+const header = document.getElementsByClassName("header")[0];
+
+const intro_textOne = document.querySelector(".intro-text.one");
+const intro_textTwo = document.querySelector(".intro-text.two");
+const intro_textThree = document.querySelector(".intro-text.three");
+
+const intro_paraOne = document.querySelector(".intro-para.one");
+const intro_paraTwo = document.querySelector(".intro-para.two");
+const intro_paraThree = document.querySelector(".intro-para.three");
 //create an array to store ques,ans and img
 
 
@@ -307,7 +316,6 @@ const gaugeWidth = 150;
 const gaugeUnit = gaugeWidth/questionTime;
 let TIMER;
 let score = 0;
-body.style.backgroundColor = "midnightblue";
 //about us
 about.addEventListener("click",function(){
     about_title.style.display = "block";
@@ -332,7 +340,6 @@ introBtn.addEventListener("click",function(){
     input.style.display = "block";
     buttons.style.display = "block";
     intro.style.display = "none";
-    body.style.backgroundColor =  "#fffcfc";
     nav.style.display = "block";
 })
 bars.addEventListener("click",function(){
@@ -473,49 +480,79 @@ checkBox.addEventListener("click",function(){
     }
 
     if(localStorage.getItem('theme') === 'dark'){
-        body.style.backgroundColor = "#171C27";
-        sidePanel.style.backgroundColor = "#171C27";
-        list.style.color = "white";
-        label.style.color = "white";
-        cross.style.color = "white";
-        nav.style.backgroundColor = "black";
-        page.style.color = "white";
-        bars.style.color = "white";
-        row.style.backgroundColor = "#171C27";
-        buttonA.style.backgroundColor = "#171C27";
-        buttonB.style.backgroundColor = "#171C27";
-        buttonC.style.backgroundColor = "#171C27";
-        buttonD.style.backgroundColor = "#171C27";
-        buttonA.style.border = "1px solid green";
-        buttonB.style.border = "1px solid green";
-        buttonC.style.border = "1px solid green";
-        buttonD.style.border = "1px solid green";
-        buttonA.style.color = "white";
-        buttonB.style.color = "white";
-        buttonC.style.color = "white";
-        buttonD.style.color = "white";
-        question.style.color = "white";
-        scoreDiv.style.color = "white";
+        darkTheme();
     }else if(localStorage.getItem('theme') === 'light'){
-        body.style.backgroundColor = "#fffcfc";
-        sidePanel.style.backgroundColor = "white";
-        list.style.color = "black";
-        label.style.color = "black";
-        cross.style.color = "black";
-        nav.style.backgroundColor = "white";
-        page.style.color = "black";
-        bars.style.color = "black";
-        row.style.backgroundColor = "white";
-        buttonA.style.backgroundColor = "white";
-        buttonB.style.backgroundColor = "white";
-        buttonC.style.backgroundColor = "white";
-        buttonD.style.backgroundColor = "white";
-        buttonA.style.color = "black";
-        buttonB.style.color = "black";
-        buttonC.style.color = "black";
-        buttonD.style.color = "black";
-        question.style.color = "black";
-        scoreDiv.style.color = "black";
+        lightTheme();
+    }
+
+});
+
+function darkTheme() {
+    body.style.backgroundColor = "#171C27";
+    sidePanel.style.backgroundColor = "#171C27";
+    list.style.color = "white";
+    label.style.color = "white";
+    cross.style.color = "white";
+    nav.style.backgroundColor = "black";
+    page.style.color = "white";
+    bars.style.color = "white";
+    row.style.backgroundColor = "#171C27";
+    buttonA.style.backgroundColor = "#171C27";
+    buttonB.style.backgroundColor = "#171C27";
+    buttonC.style.backgroundColor = "#171C27";
+    buttonD.style.backgroundColor = "#171C27";
+    buttonA.style.border = "1px solid green";
+    buttonB.style.border = "1px solid green";
+    buttonC.style.border = "1px solid green";
+    buttonD.style.border = "1px solid green";
+    buttonA.style.color = "white";
+    buttonB.style.color = "white";
+    buttonC.style.color = "white";
+    buttonD.style.color = "white";
+    question.style.color = "white";
+    scoreDiv.style.color = "white";
+
+
+}
+
+function lightTheme() {
+    body.style.backgroundColor = "#fffcfc";
+    sidePanel.style.backgroundColor = "white";
+    list.style.color = "black";
+    label.style.color = "black";
+    cross.style.color = "black";
+    nav.style.backgroundColor = "white";
+    page.style.color = "black";
+    bars.style.color = "black";
+    row.style.backgroundColor = "white";
+    buttonA.style.backgroundColor = "white";
+    buttonB.style.backgroundColor = "white";
+    buttonC.style.backgroundColor = "white";
+    buttonD.style.backgroundColor = "white";
+    buttonA.style.color = "black";
+    buttonB.style.color = "black";
+    buttonC.style.color = "black";
+    buttonD.style.color = "black";
+    question.style.color = "black";
+    scoreDiv.style.color = "black";
+}
+window.addEventListener('load', () => {
+    if(window.localStorage.getItem('theme') === 'dark') {
+       darkTheme();
+       checkBox.checked = true;
+       body.style.backgroundColor = "#171C27";
+
+    } 
+    if (window.localStorage.getItem('theme') === 'light') {
+       lightTheme();    
+       header.style.color = "black";
+       intro_textOne.style.backgroundColor = "midnightblue";
+       intro_textTwo.style.backgroundColor = "midnightblue";
+       intro_textThree.style.backgroundColor = "midnightblue";
+
+       intro_paraOne.style.color = "white";
+       intro_paraTwo.style.color = "white";
+       intro_paraThree.style.color = "white";
     }
 
 });
