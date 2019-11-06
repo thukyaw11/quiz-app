@@ -16,6 +16,11 @@ const choiceD = document.getElementById("D");
 const startEnglish = document.getElementById("startEnglish");
 const startMedicine = document.getElementById("startMedicine");
 const startTechnology = document.getElementById("startTechnology");
+const startMovies = document.getElementById("startMovies");
+const startMaths = document.getElementById("startMaths");
+const startPhysics = document.getElementById("startPhysics");
+const startChemistry = document.getElementById("startChemistry");
+const startGeology = document.getElementById("startGeology");
 ////////////////////////////////////////////////
 const img = document.getElementById("img");
 const nav = document.getElementsByClassName("nav-bar")[0];
@@ -40,6 +45,7 @@ const label = document.getElementsByClassName("custom-control-label")[0];
 const cross = document.getElementById("cross");
 const row = document.getElementsByClassName("row")[0];
 const about = document.getElementById("ques");
+const disable_abt = document.getElementById("disable_about");
 const about_title = document.getElementById("about_title");
 
 const header = document.getElementsByClassName("header")[0];
@@ -57,6 +63,8 @@ const spinner = document.getElementsByClassName("spinner-border")[0];
 const devTest = document.getElementsByClassName("devText")[0];
 const home = document.getElementById("home");
 
+//app info
+const about_info = document.getElementsByClassName("about-info");
 
 //create some variable
 const lastQuestion = english.length-1;
@@ -75,15 +83,18 @@ const inDev = () => {
     buttons.style.display = "none";
     page.innerHTML = "Quiz";
     devTest.style.display = "block";
+    home.style.display = "block";
 }
 //about us
 about.addEventListener("click",function(){
     about_title.style.display = "block";
+    home.style.display = "block";
     buttons.style.display = "none";
     page.innerHTML = "About us";
     input.style.display = "none";
     spinner.style.display = "none";
     devTest.style.display = "none";
+    scoreDiv.style.display = "none";
 
 });
 //render question
@@ -115,22 +126,31 @@ cross.addEventListener("click",function(){
 });
 
 //start on click category
-startEnglish.addEventListener("click",function(){
+startEnglish.addEventListener("click",() => {
     startQuiz(english);
-
 });
-
-startMedicine.addEventListener("click",function(){
+startMedicine.addEventListener("click",() => {
     startQuiz(medicine);
 });
-
-startTechnology.addEventListener("click",function(){
+startTechnology.addEventListener("click",() => {
     inDev();
-    home.style.display = "block";
-
-
-})
-
+});
+startMovies.addEventListener("click",() => {
+    inDev();
+});
+startPhysics.addEventListener("click",() => {
+    inDev();
+});
+startChemistry.addEventListener("click",() => {
+    inDev();
+});
+startChemistry.addEventListener("click",() => {
+    inDev();
+});
+startGeology.addEventListener("click",() => {
+    inDev();
+});
+//
 function startQuiz(category){
     page.innerHTML = "Quiz";
     buttons.style.display = "none";
@@ -138,6 +158,8 @@ function startQuiz(category){
     renderQuestion(category);
     window.hehe = category;
     quiz.style.display = "block";
+    disable_abt.style.display = "none";
+    
     renderProgress(category);
 
     renderCounter(category);
@@ -220,6 +242,7 @@ const checkAnswer = (answer,category) => {
 
 
 const scoreRender = () => {
+    disable_abt.style.display = "block";
     page.innerHTML = "Score";
     const name = document.getElementById("name").value;
     quiz.style.display = "none";
@@ -282,7 +305,11 @@ const darkTheme = () => {
     choiceD.style.color = "white";
     question.style.color = "white";
     scoreDiv.style.color = "white";
-
+    devTest.style.color = "white";
+    home.style.color = "white";
+    for(var f = 0; f <about_info.length; f++){
+        about_info[f].style.color = "white";
+    }
 
 }
 
@@ -306,6 +333,11 @@ const lightTheme = () => {
     choiceD.style.color = "black";
     question.style.color = "black";
     scoreDiv.style.color = "black";
+    devTest.style.color = "black";
+    home.style.color = "black";
+    for(var f = 0; f <about_info.length; f++){
+        about_info[f].style.color = "black";
+    }
 }
 //check theme in localstorage 
 window.addEventListener('load', () => {
