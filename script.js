@@ -46,6 +46,10 @@ const intro_textThree = document.querySelector(".intro-text.three");
 const intro_paraOne = document.querySelector(".intro-para.one");
 const intro_paraTwo = document.querySelector(".intro-para.two");
 const intro_paraThree = document.querySelector(".intro-para.three");
+
+const spinner = document.getElementsByClassName("spinner-border")[0];
+const devTest = document.getElementsByClassName("devText")[0];
+const home = document.getElementById("home");
 //create an array to store ques,ans and img
 
 
@@ -316,12 +320,22 @@ const gaugeWidth = 150;
 const gaugeUnit = gaugeWidth/questionTime;
 let TIMER;
 let score = 0;
+// development mode
+const inDev = () => {
+    spinner.style.display = "block";
+    input.style.display = "none";
+    buttons.style.display = "none";
+    page.innerHTML = "Quiz";
+    devTest.style.display = "block";
+}
 //about us
 about.addEventListener("click",function(){
     about_title.style.display = "block";
     buttons.style.display = "none";
     page.innerHTML = "About us";
     input.style.display = "none";
+    spinner.style.display = "none";
+    devTest.style.display = "none";
 
 });
 //render question
@@ -358,7 +372,12 @@ startMedicine.addEventListener("click",function(){
 });
 
 startTechnology.addEventListener("click",function(){
-    startQuiz(technology);
+    inDev();
+    home.style.display = "block";
+    home.addEventListener("click",function(){
+        window.location.reload();
+    });
+
 })
 
 function startQuiz(category){
@@ -455,8 +474,8 @@ const scoreRender = () => {
     quiz.style.display = "none";
     scoreDiv.style.display = "block";
     const scorePercent = Math.round(100*score/window.hehe.length);
-    scoreDiv.innerHTML = "<p> Hello, " + "<b>"+    name.toUpperCase()+"</b> <br>"+"Result : "+"<b>"+score + "/" + window.hehe.length+"</b> <br>Your score percent is <b>"+scorePercent+" %</b> </p><i class='fas fa-home' id='home'></i>";
-    const home = document.getElementById("home");
+    scoreDiv.innerHTML = "<p> Hello, " + "<b>"+    name.toUpperCase()+"</b> <br>"+"Result : "+"<b>"+score + "/" + window.hehe.length+"</b> <br>Your score percent is <b>"+scorePercent+" %</b> </p>";
+    home.style.display = "block";
     home.addEventListener("click",function(){
         window.location.reload();
     });

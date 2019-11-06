@@ -610,5 +610,10 @@ li{
         text-align: center;
         margin-top: 15px;
     }
-
+    .d-flex{
+        margin-top: 100px;
+    }
+    .devText{
+        text-align: center;
+    }
   }
