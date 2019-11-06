@@ -36,7 +36,10 @@ const cross = document.getElementById("cross");
 const row = document.getElementsByClassName("row")[0];
 const about = document.getElementById("ques");
 const about_title = document.getElementById("about_title");
+
 //create an array to store ques,ans and img
+
+
 //array for category
 let english = [
     {
@@ -306,7 +309,7 @@ let TIMER;
 let score = 0;
 body.style.backgroundColor = "midnightblue";
 //about us
-ques.addEventListener("click",function(){
+about.addEventListener("click",function(){
     about_title.style.display = "block";
     buttons.style.display = "none";
     page.innerHTML = "About us";
@@ -459,6 +462,17 @@ const scoreRender = () => {
 const checkBox = document.getElementsByClassName("custom-control-input")[0];
 checkBox.addEventListener("click",function(){
     if(checkBox.checked){
+
+        window.localStorage.setItem('theme','dark');
+
+
+    }else if(!checkBox.checked){
+
+        window.localStorage.setItem('theme','light');
+
+    }
+
+    if(localStorage.getItem('theme') === 'dark'){
         body.style.backgroundColor = "#171C27";
         sidePanel.style.backgroundColor = "#171C27";
         list.style.color = "white";
@@ -482,8 +496,7 @@ checkBox.addEventListener("click",function(){
         buttonD.style.color = "white";
         question.style.color = "white";
         scoreDiv.style.color = "white";
-
-    }else if(!checkBox.checked){
+    }else if(localStorage.getItem('theme') === 'light'){
         body.style.backgroundColor = "#fffcfc";
         sidePanel.style.backgroundColor = "white";
         list.style.color = "black";
