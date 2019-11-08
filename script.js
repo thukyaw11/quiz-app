@@ -1,6 +1,8 @@
 //import array from resources   
 import {english} from './resources/english.js';
 import {medicine} from './resources/medicine.js';
+import {technology} from './resources/technology.js';
+import {movie} from './resources/movies.js';
 
 
 
@@ -133,10 +135,10 @@ startMedicine.addEventListener("click",() => {
     startQuiz(medicine);
 });
 startTechnology.addEventListener("click",() => {
-    inDev();
+    startQuiz(technology);
 });
 startMovies.addEventListener("click",() => {
-    inDev();
+    startQuiz(movie);
 });
 startPhysics.addEventListener("click",() => {
     inDev();

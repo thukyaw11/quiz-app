@@ -1,4 +1,4 @@
-export let technology = [
+export let movie = [
     {
         question:"What was the first emoticon ever used?",
         img:"img/money.jpeg",

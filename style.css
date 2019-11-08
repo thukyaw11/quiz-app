@@ -399,8 +399,8 @@ li{
         font-size: 20px;
     }
     .prog{
-        width: 18px;
-        height: 18px;
+        width: 14px;
+        height: 14px;
     }
     .choice{
         width: 100%;
@@ -437,7 +437,7 @@ li{
         color: green;
     }
     #question p{
-        font-size: 25px;
+        font-size: 20px;
     }
     .cat_btn{
         width: 48%;
