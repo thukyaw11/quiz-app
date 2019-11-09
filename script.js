@@ -284,6 +284,7 @@ checkBox.addEventListener("click",function(){
 });
 //function darkmode
 const darkTheme = () => {
+    
     body.style.backgroundColor = "#171C27";
     sidePanel.style.backgroundColor = "#171C27";
     list.style.color = "white";
@@ -316,6 +317,7 @@ const darkTheme = () => {
 }
 
 const lightTheme = () => {
+
     body.style.backgroundColor = "#fffcfc";
     sidePanel.style.backgroundColor = "white";
     list.style.color = "black";
