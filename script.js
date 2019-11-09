@@ -3,7 +3,10 @@ import {english} from './resources/english.js';
 import {medicine} from './resources/medicine.js';
 import {technology} from './resources/technology.js';
 import {movie} from './resources/movies.js';
-
+import {maths} from './resources/math.js';
+import {physics} from './resources/physics.js';
+import {html} from './resources/html.js';
+import { computer } from './resources/computer.js';
 
 
 
@@ -21,8 +24,9 @@ const startTechnology = document.getElementById("startTechnology");
 const startMovies = document.getElementById("startMovies");
 const startMaths = document.getElementById("startMaths");
 const startPhysics = document.getElementById("startPhysics");
-const startChemistry = document.getElementById("startChemistry");
-const startGeology = document.getElementById("startGeology");
+const startHTML = document.getElementById("startHTML");
+const startComputer = document.getElementById("startComputer");
+
 ////////////////////////////////////////////////
 const img = document.getElementById("img");
 const nav = document.getElementsByClassName("nav-bar")[0];
@@ -140,17 +144,18 @@ startTechnology.addEventListener("click",() => {
 startMovies.addEventListener("click",() => {
     startQuiz(movie);
 });
+startMaths.addEventListener("click",() => {
+    startQuiz(maths);
+});
 startPhysics.addEventListener("click",() => {
-    inDev();
+    startQuiz(physics);
 });
-startChemistry.addEventListener("click",() => {
-    inDev();
+
+startHTML.addEventListener("click",() => {
+    startQuiz(html);
 });
-startChemistry.addEventListener("click",() => {
-    inDev();
-});
-startGeology.addEventListener("click",() => {
-    inDev();
+startComputer.addEventListener("click",() => {
+    startQuiz(computer);
 });
 //
 function startQuiz(category){
